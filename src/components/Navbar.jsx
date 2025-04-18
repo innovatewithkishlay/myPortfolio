@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -15,16 +15,27 @@ import { motion } from "framer-motion";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  let timeout;
 
   function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
+    setIsVisible(false);
+
+    clearTimeout(timeout);
+
+    timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 200);
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+      clearTimeout(timeout);
+    };
+  }, []);
 
   return (
     <Navbar
@@ -32,6 +43,10 @@ function NavBar() {
       fixed="top"
       expand="md"
       className={navColour ? "navbar-sticky" : "navbar"}
+      style={{
+        display: isVisible ? "block" : "none",
+        transition: "all 0.3s ease", // Smooth transition for showing/hiding navbar
+      }}
     >
       <Container className="d-flex justify-content-center">
         <Navbar.Toggle

@@ -43,7 +43,7 @@ function AboutCard() {
               learning and striving to improve both my code and my systems
               thinking.
             </p>
-            <ul>
+            {/* <ul>
               <li className="about-activity">
                 <ImPointRight /> Exploring Cloud & DevOps Tools
               </li>
@@ -53,7 +53,7 @@ function AboutCard() {
               <li className="about-activity">
                 <ImPointRight /> Reading DevOps Blogs & Tutorials
               </li>
-            </ul>
+            </ul> */}
             <p style={{ color: "rgb(155 126 172)", fontStyle: "italic" }}>
               "Code with purpose. Automate with precision. Deliver with
               confidence."
