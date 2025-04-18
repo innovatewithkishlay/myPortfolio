@@ -70,7 +70,7 @@ function Home2() {
                   </Col>
                 </Row>
 
-                <Row className="justify-content-center mt-5">
+                {/* <Row className="justify-content-center mt-5">
                   <Col md={12} className="text-center connect-section">
                     <h1 className="connect-heading">
                       <span className="purple">Connect</span> with{" "}
@@ -118,7 +118,7 @@ function Home2() {
                       </a>
                     </div>
                   </Col>
-                </Row>
+                </Row> */}
               </motion.div>
             )}
           </AnimatePresence>
