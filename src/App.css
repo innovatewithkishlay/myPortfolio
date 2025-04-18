@@ -225,91 +225,72 @@
   color: #c770f0;
   font-weight: 500;
 }
-/* Navbar Styles */
 .navbar {
-  background-color: transparent;
-  transition: background-color 0.3s ease, padding 0.3s ease;
-  padding-top: 20px; /* Added padding from the top */
+  width: 40%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: rgba(18, 18, 18, 0.6);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); /* Blurred effect for the background */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.navbar-sticky {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 15px 0;
-}
-
-.navbar .navbar-toggler {
-  background-color: #c770f0; /* Animated toggle button color */
-}
-
-.navbar .navbar-toggler span {
-  background-color: #fff;
-}
-
-.navbar .nav-link {
-  color: #fff;
-  font-size: 1.1rem;
-  padding: 10px 25px;
-  transition: color 0.3s ease, transform 0.3s ease;
-  font-weight: 500;
-}
-
-.navbar .nav-link:hover {
-  color: #c770f0;
-  transform: translateY(-3px);
-}
-
-/* Active link styling */
-.navbar .nav-link.active {
-  color: #c770f0 !important;
-}
-
-/* Center Align Navbar Items */
-.navbar .navbar-nav {
+.navbar .navbar-collapse {
   display: flex;
-  justify-content: center; /* Centers the navbar items */
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-/* Responsive Navbar */
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  pointer-events: auto;
+  transition: none;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff;
+  background-color: transparent;
+  transform: none;
+}
+
+.navbar .nav-link.active {
+  color: #c770f0 !important;
+}
+
+.navbar .navbar-toggler {
+  background-color: #c770f0;
+  border-radius: 5px;
+  border: none;
+}
+
 @media (max-width: 992px) {
-  .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.9);
+  .navbar {
+    width: 95%;
+    padding: 15px;
   }
+
+  .navbar .navbar-nav {
+    flex-direction: column;
+  }
+
   .navbar .nav-link {
-    padding: 15px 20px;
-    font-size: 1.3rem;
+    padding: 15px;
+    font-size: 1.2rem;
   }
-}
-
-/* Additional Styling for Navbar Toggle Animation */
-.navbar .navbar-toggler span {
-  width: 30px;
-  height: 4px;
-  margin: 6px 0;
-  transition: transform 0.3s ease;
-}
-
-.navbar .navbar-toggler.collapsed span:nth-child(1) {
-  transform: rotate(0deg);
-}
-
-.navbar .navbar-toggler.collapsed span:nth-child(2) {
-  opacity: 1;
-}
-
-.navbar .navbar-toggler.collapsed span:nth-child(3) {
-  transform: rotate(0deg);
-}
-
-.navbar .navbar-toggler:not(.collapsed) span:nth-child(1) {
-  transform: rotate(45deg);
-}
-
-.navbar .navbar-toggler:not(.collapsed) span:nth-child(2) {
-  opacity: 0;
-}
-
-.navbar .navbar-toggler:not(.collapsed) span:nth-child(3) {
-  transform: rotate(-45deg);
 }
