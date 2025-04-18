@@ -194,6 +194,7 @@
   font-weight: 500;
 }
 
+/* navbar section  */
 .navbar {
   width: 40%;
   max-width: 1200px;
@@ -262,4 +263,81 @@
     padding: 15px;
     font-size: 1.2rem;
   }
+}
+
+.intro-box {
+  background: rgba(25, 25, 25, 0.6);
+  backdrop-filter: blur(14px);
+  border-radius: 24px;
+  padding: 3.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.intro-heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.fade-line {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-body {
+  font-size: 1.15rem;
+  line-height: 2;
+  color: #d6d6d6;
+  padding: 0 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: pre-wrap;
+  animation: typing 3.5s steps(120, end), blink 0.75s step-end infinite;
+  border-right: 2px solid #c770f0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.purple {
+  color: #c770f0;
+  font-weight: 600;
 }
