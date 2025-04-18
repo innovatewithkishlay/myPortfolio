@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.social-icon {
+  color: #ffffff;
+  background-color: #6c63ff;
+  border-radius: 50%;
+  padding: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: #8e84ff;
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+  color: #fff;
+}
