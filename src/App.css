@@ -225,3 +225,91 @@
   color: #c770f0;
   font-weight: 500;
 }
+/* Navbar Styles */
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  padding-top: 20px; /* Added padding from the top */
+}
+
+.navbar-sticky {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+}
+
+.navbar .navbar-toggler {
+  background-color: #c770f0; /* Animated toggle button color */
+}
+
+.navbar .navbar-toggler span {
+  background-color: #fff;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #c770f0;
+  transform: translateY(-3px);
+}
+
+/* Active link styling */
+.navbar .nav-link.active {
+  color: #c770f0 !important;
+}
+
+/* Center Align Navbar Items */
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center; /* Centers the navbar items */
+  align-items: center;
+  width: 100%;
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar .nav-link {
+    padding: 15px 20px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Additional Styling for Navbar Toggle Animation */
+.navbar .navbar-toggler span {
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  transition: transform 0.3s ease;
+}
+
+.navbar .navbar-toggler.collapsed span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.navbar .navbar-toggler.collapsed span:nth-child(2) {
+  opacity: 1;
+}
+
+.navbar .navbar-toggler.collapsed span:nth-child(3) {
+  transform: rotate(0deg);
+}
+
+.navbar .navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.navbar .navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar .navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: rotate(-45deg);
+}
