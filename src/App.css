@@ -53,3 +53,38 @@
   box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
   color: #fff;
 }
+.connect-section {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.connect-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.connect-subtext {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  color: white;
+  background-color: #6c63ff;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: #8e84ff;
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+}
