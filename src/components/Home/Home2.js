@@ -78,55 +78,49 @@ function Home2() {
                   </Col>
                 </Row>
 
-                <Row>
-                  <Col md={12} className="home-about-social">
-                    <h1>FIND ME ON</h1>
-                    <p>
-                      Feel free to <span className="purple">connect </span>with
-                      me
+                <Row className="justify-content-center mt-5">
+                  <Col md={12} className="text-center">
+                    <h1 className="mb-3" style={{ fontWeight: "bold" }}>
+                      <span className="purple">Connect </span>with Me
+                    </h1>
+                    <p style={{ fontSize: "1.1rem", color: "#aaa" }}>
+                      I’m always open to discussing new projects or
+                      opportunities.
                     </p>
-                    <ul className="home-about-social-links">
-                      <li className="social-icons">
-                        <a
-                          href="https://github.com/soumyajit4419"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="icon-colour  home-social-icons"
-                        >
-                          <AiFillGithub />
-                        </a>
-                      </li>
-                      <li className="social-icons">
-                        <a
-                          href="https://twitter.com/Soumyajit4419"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="icon-colour  home-social-icons"
-                        >
-                          <AiOutlineTwitter />
-                        </a>
-                      </li>
-                      <li className="social-icons">
-                        <a
-                          href="https://www.linkedin.com/in/soumyajit4419/"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="icon-colour  home-social-icons"
-                        >
-                          <FaLinkedinIn />
-                        </a>
-                      </li>
-                      <li className="social-icons">
-                        <a
-                          href="https://www.instagram.com/soumyajit4419"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="icon-colour home-social-icons"
-                        >
-                          <AiFillInstagram />
-                        </a>
-                      </li>
-                    </ul>
+                    <div className="d-flex justify-content-center flex-wrap gap-4 mt-4">
+                      <a
+                        href="https://github.com/soumyajit4419"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="social-icon"
+                      >
+                        <AiFillGithub size={35} />
+                      </a>
+                      <a
+                        href="https://twitter.com/Soumyajit4419"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="social-icon"
+                      >
+                        <AiOutlineTwitter size={35} />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/soumyajit4419/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="social-icon"
+                      >
+                        <FaLinkedinIn size={35} />
+                      </a>
+                      <a
+                        href="https://www.instagram.com/soumyajit4419"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="social-icon"
+                      >
+                        <AiFillInstagram size={35} />
+                      </a>
+                    </div>
                   </Col>
                 </Row>
               </motion.div>
