@@ -79,13 +79,13 @@ function Home2() {
                 </Row>
 
                 <Row className="justify-content-center mt-5">
-                  <Col md={12} className="text-center">
-                    <h1 className="mb-3" style={{ fontWeight: "bold" }}>
-                      <span className="purple">Connect </span>with Me
+                  <Col md={12} className="text-center connect-section">
+                    <h1 className="connect-heading">
+                      <span className="purple">Connect</span> with{" "}
+                      <span className="purple">Me</span>
                     </h1>
-                    <p style={{ fontSize: "1.1rem", color: "#aaa" }}>
-                      I’m always open to discussing new projects or
-                      opportunities.
+                    <p className="connect-subtext">
+                      I’m always open to collaboration or a casual chat!
                     </p>
                     <div className="d-flex justify-content-center flex-wrap gap-4 mt-4">
                       <a
@@ -93,32 +93,36 @@ function Home2() {
                         target="_blank"
                         rel="noreferrer"
                         className="social-icon"
+                        aria-label="GitHub"
                       >
-                        <AiFillGithub size={35} />
+                        <AiFillGithub size={30} />
                       </a>
                       <a
                         href="https://twitter.com/Soumyajit4419"
                         target="_blank"
                         rel="noreferrer"
                         className="social-icon"
+                        aria-label="Twitter"
                       >
-                        <AiOutlineTwitter size={35} />
+                        <AiOutlineTwitter size={30} />
                       </a>
                       <a
                         href="https://www.linkedin.com/in/soumyajit4419/"
                         target="_blank"
                         rel="noreferrer"
                         className="social-icon"
+                        aria-label="LinkedIn"
                       >
-                        <FaLinkedinIn size={35} />
+                        <FaLinkedinIn size={30} />
                       </a>
                       <a
                         href="https://www.instagram.com/soumyajit4419"
                         target="_blank"
                         rel="noreferrer"
                         className="social-icon"
+                        aria-label="Instagram"
                       >
-                        <AiFillInstagram size={35} />
+                        <AiFillInstagram size={30} />
                       </a>
                     </div>
                   </Col>
