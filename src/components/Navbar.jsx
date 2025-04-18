@@ -15,29 +15,25 @@ import { motion } from "framer-motion";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const [isVisible, setIsVisible] = useState(true); // Tracks visibility of navbar
+  const [isVisible, setIsVisible] = useState(true);
   let timeout;
 
   function scrollHandler() {
-    // Immediately hide the navbar when scrolling starts
     setIsVisible(false);
 
-    // Clear any previous timeouts (to reset the delay when scrolling starts again)
     clearTimeout(timeout);
 
-    // Set a timeout to show the navbar again after a brief delay (2 seconds)
     timeout = setTimeout(() => {
       setIsVisible(true);
-    }, 2000); // 2 seconds delay before showing navbar after scrolling stops
+    }, 2000);
   }
 
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", scrollHandler);
-      clearTimeout(timeout); // Clear timeout if the component is unmounted
+      clearTimeout(timeout);
     };
   }, []);
 
@@ -48,10 +44,10 @@ function NavBar() {
       expand="md"
       className={navColour ? "navbar-sticky" : "navbar"}
       style={{
-        display: isVisible ? "block" : "none", // Hide navbar if not visible
-        opacity: isVisible ? 1 : 0, // Smooth fade-in/out effect
-        transform: isVisible ? "translateY(0)" : "translateY(-100%)", // Smooth move up/down effect
-        transition: "all 0.4s ease-in-out", // Smooth transition for opacity and transform
+        display: isVisible ? "block" : "none",
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translateY(0)" : "translateY(-100%)",
+        transition: "all 0.4s ease-in-out",
       }}
     >
       <Container className="d-flex justify-content-center">
