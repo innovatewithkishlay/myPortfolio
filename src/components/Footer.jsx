@@ -6,8 +6,7 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import "../App.css"; // Using global CSS
+// import "../App.css";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -29,29 +28,11 @@ function Footer() {
           </Col>
 
           <Col md={4} className="footer-section text-center">
-            <h5 className="footer-title">Quick Links</h5>
-            <ul className="footer-links">
-              <li>
-                <a href="#about">About Me</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#skills">Skills</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </Col>
-
-          <Col md={4} className="footer-section">
             <h5 className="footer-title">Connect with me</h5>
             <ul className="footer-icons">
               <li className="social-icons">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/innovatewithkishlay"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -60,7 +41,7 @@ function Footer() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/yourusername"
+                  href="https://twitter.com/kishlay_012"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -69,16 +50,7 @@ function Footer() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://linkedin.com/in/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://instagram.com/yourusername"
+                  href="https://www.instagram.com/kishlay_012/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -117,7 +117,7 @@ function Home2() {
                     <Button
                       variant="outline-light"
                       type="submit"
-                      className="px-8 py-3 rounded-lg border-2 border-[#CD5FF8] bg-[#CD5FF8] text-white hover:bg-transparent hover:text-[#CD5FF8] transition duration-300 shadow-md hover:shadow-lg"
+                      className="px-8 py-3 rounded-lg border-2 border-[#CD5FF8] bg-[#CD5FF8] text-white hover:bg-transparent hover:text-[#C770F0] transition duration-300 shadow-md hover:shadow-lg"
                     >
                       Send
                     </Button>
